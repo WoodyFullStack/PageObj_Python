@@ -4,7 +4,12 @@ from selenium.webdriver.common.by import By
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.XPATH, "//div/span[@class = 'btn-group']")
 
+class BasketPageLocators:
+    BASKET_EMPTINESS_MESSAGE = (By.XPATH, "//div[@class='content']/div[@id='content_inner']/p")
+    ITEMS_IN_CART_MESSAGE = (By.XPATH, "//div[@class='content']/div[@id='content_inner']/div")
+    pass
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
